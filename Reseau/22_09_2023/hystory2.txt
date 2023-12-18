@@ -1,0 +1,97 @@
+[jngouna@data ~]$ git clone git@github.com:NJFresnay/POO_python.git
+Cloning into 'POO_python'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+[jngouna@data ~]$ ls
+08_09_23_1.txt  2.txt   Documents  Modèles     Public      seance.txt
+08_09_23.txt    bin     exogit     Musique     R           Téléchargements
+15_09_2023      Bureau  Images     POO_python  script.txt  Vidéos
+[jngouna@data ~]$ cd POO_python
+[jngouna@data POO_python]$ ls
+README.md
+[jngouna@data POO_python]$ cat > hello.py
+print("Hello world guys!")^C
+[jngouna@data POO_python]$ chmod +xu hello.py
+chmod: invalid mode: ‘+xu’
+Try 'chmod --help' for more information.
+[jngouna@data POO_python]$ chmod +x hello.py
+[jngouna@data POO_python]$ cat hello.py
+print("Hello world guys!")[jngouna@data POO_python]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+[jngouna@data POO_python]$ git add hello.py
+[jngouna@data POO_python]$ git commit -a -m "premier essais dans ce repo"
+[main 7a0d221] premier essais dans ce repo
+ 1 file changed, 1 insertion(+)
+ create mode 100755 hello.py
+[jngouna@data POO_python]$ git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Already up to date.
+[jngouna@data POO_python]$ git pull
+^[[Ahint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Already up to date.
+[jngouna@data POO_python]$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 40 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 325 bytes | 162.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:NJFresnay/POO_python.git
+   97c6262..7a0d221  main -> main
+[jngouna@data POO_python]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[jngouna@data POO_python]$ cat hello.py
+print("Hello world guys!")[jngouna@data POO_python]$ cat > hey.txt
+
+La vie est bien plus simple qu'on ne le pense! ^C
+[jngouna@data POO_python]$ chmod +x hey.txt
+[jngouna@data POO_python]$ git add hey.txt
+[jngouna@data POO_python]$ git commit -a -m "deuxième essais" 
+[main f028c40] deuxième essais
+ 1 file changed, 2 insertions(+)
+ create mode 100755 hey.txt
+[jngouna@data POO_python]$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 40 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 372 bytes | 124.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:NJFresnay/POO_python.git
+   7a0d221..f028c40  main -> main
+[jngouna@data POO_python]$ 

@@ -1,0 +1,77 @@
+bash-5.2$ ./exercice_frigo.py
+
+Inventaire:
+oeufs  :  12
+beurre  :  250
+yaourt  :  6
+fraise  :  10
+prunes  :  4
+******FIN*****
+None
+A-t-on les éléments en quantité nécessaire dans notre frigo?
+False
+<bound method Frigo.etat of <Frigo.Frigo object at 0x7f2066e9b150>>
+bash-5.2$ ./exercice_frigo.py
+
+Inventaire:
+oeufs  :  12
+beurre  :  250
+yaourt  :  6
+fraise  :  10
+prunes  :  4
+******FIN*****
+None
+A-t-on les éléments en quantité nécessaire dans notre frigo?
+False
+
+Inventaire:
+oeufs  :  10
+beurre  :  150
+yaourt  :  6
+fraise  :  -30
+prunes  :  4
+******FIN*****
+None
+bash-5.2$ ./exercice_frigo.py
+
+Inventaire:
+oeufs  :  12
+beurre  :  250
+yaourt  :  6
+fraise  :  10
+prunes  :  4
+******FIN*****
+None
+A-t-on les éléments en quantité nécessaire dans notre frigo?
+True
+
+Inventaire:
+oeufs  :  10
+beurre  :  150
+yaourt  :  6
+fraise  :  0
+prunes  :  4
+******FIN*****
+None
+bash-5.2$ ./exercice_frigo.py
+
+Inventaire:
+oeufs  :  12
+beurre  :  250
+yaourt  :  6
+fraise  :  25
+prunes  :  4
+******FIN*****
+None
+A-t-on les éléments en quantité nécessaire dans notre frigo?
+True
+
+Inventaire:
+oeufs  :  10
+beurre  :  150
+yaourt  :  6
+fraise  :  15
+prunes  :  4
+******FIN*****
+None
+bash-5.2$ 

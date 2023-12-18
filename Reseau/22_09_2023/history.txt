@@ -1,0 +1,45 @@
+[jngouna@data ~]$ git clone data:~jacquelin.charbonnel/exogit
+Cloning into 'exogit'...
+^X^C
+[jngouna@data ~]$ git add Jennifer.txt
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[jngouna@data ~]$ ssh 05i008
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

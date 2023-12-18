@@ -1,0 +1,262 @@
+bash-5.2$ ssh data
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Last login: Fri Sep 22 16:52:14 2023 from 172.20.45.166
+[jngouna@data ~]$ ls
+08_09_23_1.txt  2.txt   Documents  Modèles  R           Téléchargements
+08_09_23.txt    bin     exogit     Musique  script.txt  Vidéos
+15_09_2023      Bureau  Images     Public   seance.txt
+[jngouna@data ~]$ c exogit
+-bash: c: command not found
+[jngouna@data ~]$ cd exogit
+[jngouna@data exogit]$ ls
+Arnaud.txt         gael.txt       jmalar.txt   Maxime.txt  rod.txt
+clarita.txt        Jacquelin.txt  lelaure.txt  Nathan.txt
+fichier_ayoub.txt  Jennifer.txt   Martine.txt  README
+[jngouna@data exogit]$ git pull
+^[[A^[[A^[[A^[^C
+[jngouna@data exogit]$ cat leleaure.txt
+cat: leleaure.txt: No such file or directory
+[jngouna@data exogit]$ cat lelaure.txt
+salut
+
+[jngouna@data exogit]$ cat Nathan.txt
+AIDE MEMOIRE POUR LES COMMANDES GIT
+
+git config --global user.name "Nathan"
+git config --global user.email nathan.rattoray6@gmail.com
+
+git clone data:~jacquelin.charbonnel/exogit             #création copie espace de travail
+
+git add Nathan.txt
+[jngouna@data exogit]$ cat Jennifer.txt
+Pour suivre l’évolution de l’état de la copie de travail :
+
+$ git status [jngouna@data exogit]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .Jennifer.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+[jngouna@data exogit]$ cd ..
+[jngouna@data ~]$ ls
+08_09_23_1.txt  2.txt   Documents  Modèles  R           Téléchargements
+08_09_23.txt    bin     exogit     Musique  script.txt  Vidéos
+15_09_2023      Bureau  Images     Public   seance.txt
+[jngouna@data ~]$ git clone git@github.com:NJFresnay/POO_python.git
+Cloning into 'POO_python'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[jngouna@data ~]$ git clone git@github.com:NJFresnay/POO_python.git
+Cloning into 'POO_python'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[jngouna@data ~]$ git pull
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[jngouna@data ~]$ git clone data:~jacquelin.charbonnel/exogit
+fatal: destination path 'exogit' already exists and is not an empty directory.
+[jngouna@data ~]$ cd exogit
+[jngouna@data exogit]$ git pull
+git status
+^C
+[jngouna@data exogit]$ ls
+Arnaud.txt         gael.txt       jmalar.txt   Maxime.txt  rod.txt
+clarita.txt        Jacquelin.txt  lelaure.txt  Nathan.txt
+fichier_ayoub.txt  Jennifer.txt   Martine.txt  README
+[jngouna@data exogit]$ cat rod.txt
+Aide mémoire fichier git
+git clone  data:~jacquelin.charbonnel/
+git config --glogal user.name
+git config --global user.email 
+[jngouna@data exogit]$ git log
+commit 889bb267bd181e3e131ce3c955c198a44395d92a (HEAD -> master, origin/master, origin/HEAD)
+Merge: 06a575a 8387289
+Author: Jennifer <jennifer.ngouna@etud.univ-angers.fr>
+Date:   Fri Sep 22 16:38:14 2023 +0200
+
+    Merge branch 'master' of data:~jacquelin.charbonnel/exogit
+
+commit 06a575a8af02d1e1a8ed1b366fcee165f9d1809f
+Merge: 31917ae 33e5c63
+Author: Jennifer <jennifer.ngouna@etud.univ-angers.fr>
+Date:   Fri Sep 22 16:37:18 2023 +0200
+
+    Merge branch 'master' of data:~jacquelin.charbonnel/exogit
+
+commit 31917ae4dcc7b8a3015ecaa1cbe477884672decc
+Merge: cc7f1fc 8ad2698
+Author: Jennifer <jennifer.ngouna@etud.univ-angers.fr>
+Date:   Fri Sep 22 16:37:06 2023 +0200
+
+    et hop un de plus
+
+commit 83872891ff2f4437ff8560b1d2ad3d5cc0466438
+Author: Moutsiha Tsala Coletta <moutsihaclara@gmail.com>
+Date:   Fri Sep 22 16:36:47 2023 +0200
+
+    rajou
+
+commit 33e5c63eeac884d3a91ce244bb720ce80518c9bc
+Author: Moutsiha Tsala Coletta <moutsihaclara@gmail.com>
+Date:   Fri Sep 22 16:28:39 2023 +0200
+
+    réessai
+
+commit cc7f1fc7f552ee70c08d557644d9916517341d7f
+Merge: b0231f8 8fad962
+Author: Jennifer <jennifer.ngouna@etud.univ-angers.fr>
+Date:   Fri Sep 22 16:30:14 2023 +0200
+
+    Et un fichier test de plus
+
+commit 8ad2698526ac66a47c041cfb955408baa02f251e
+Author: Maxime Chrabonneau <macharb@etud.univ-angers.fr>
+Date:   Fri Sep 22 16:25:18 2023 +0200
+
+    modif 2 premier fichier
+
+commit 6c3f3a19fdce64b437592d00a752dbb06cff6dfc
+Author: Maxime Chrabonneau <macharb@etud.univ-angers.fr>
+Date:   Fri Sep 22 16:23:54 2023 +0200
+
+    modif premier fichier
+
+commit 8fad962ff1f506957a76cf7e055e3c92a2bf936f
+Author: Jules Malard <>
+Date:   Fri Sep 22 16:10:52 2023 +0200
+
+    mon premier commit
+
+commit f3125bae07979872912221529c535f5e5e95878d
+Author: BOUNAMARI <rodolphebounamari42@gmail.com>
+Date:   Fri Sep 22 16:06:44 2023 +0200
+
+    je viens de mettre un nouveau fichier, mon premier commit
+
+commit b0231f8642bffaed8031f83dd9e7332f6ff2c5bc
+Author: Jennifer <jennifer.ngouna@etud.univ-angers.fr>
+Date:   Fri Sep 22 16:22:06 2023 +0200
+
+    Et un fichier test de plus
+
+commit 0b924c11544dcafb9706565e87c6bd4b1b428aef
+Merge: adfaf5d 8875d48
+Author: Alice De L. Carroll <alice@pays.des.merveilles>
+Date:   Fri Sep 22 16:21:02 2023 +0200
+
+    Merge branch 'master' of data:~jacquelin.charbonnel/exogit
+
+commit 8875d48dd1e2449bd781bc7ac2a58d8b52602ff6
+Author: Maxime Chrabonneau <macharb@etud.univ-angers.fr>
+Date:   Fri Sep 22 16:02:31 2023 +0200
+
+    mon premier commit
+
+commit adfaf5d88a579a3a116a8ed3919b4fc9b2510844
+Author: Alice De L. Carroll <alice@pays.des.merveilles>
+Date:   Fri Sep 22 16:20:42 2023 +0200
+
+    commitArnaud
+
+commit 687d487b1206003346ed25771e049e73baeb88f8
+Author: Ayoub taousi <ayoubtaoussi@gmail.com>
+Date:   Fri Sep 22 16:04:00 2023 +0200
+
+    c'est pas mon premier commit
+
+commit d225468b741cd9a5caca67e95319d5d96865a48a
+Merge: eb3044b 1e0d024
+Author: gael <egbkodia@gmail.com>
+Date:   Fri Sep 22 16:18:33 2023 +0200
+
+    Merge branch 'master' of data:~jacquelin.charbonnel/exogit
+
+commit 1e0d02416e8cde30808e44d4f71efdca4ea4a88e
+Merge: a85ba00 d2abfb9
+Author: Alice De L. Carroll <alice@pays.des.merveilles>
+Date:   Fri Sep 22 16:17:54 2023 +0200
+
+    Merge branch 'master' of data:~jacquelin.charbonnel/exogit
+
+commit d2abfb95fb3b3e6fe49ab84fab4e4680374480bc
+Merge: ee80ed6 0116a1e
+Author: Abessolo Minko Auderic Bien Aimee <auderic@gmail.com>
+Date:   Fri Sep 22 16:17:16 2023 +0200
+
+    Merge branch 'master' of data:~jacquelin.charbonnel/exogit
+
+commit 0116a1e8a86e87f15c10226436af1713b2bf64cc
+Merge: 8443d07 3d221a7
+Author: Lelaure <lelaure@toto.fr>
+Date:   Fri Sep 22 16:16:25 2023 +0200
+
+    Merge branch 'master' of data:~jacquelin.charbonnel/exogit
+
+commit 3d221a7b452ecc13b8010060a8aafed4c546c2fe
+Merge: f653a8c 17bfebb
+Author: Nathan Rattoray <nathan.rattoray6@gmail.com>
+Date:   Fri Sep 22 16:11:31 2023 +0200
+
+    mon premier commit, un peu mon commit out
+
+commit eb3044bdb40eb897c0b8703eaa2f7a8d3b8b3b80
+Author: gael <egbkodia@gmail.com>
+Date:   Fri Sep 22 16:11:02 2023 +0200
+
+    Mon premier commit
+
+commit 8443d077ea35c601e3275a3587e75e140512fbb6
+Merge: 5bd79f7 17bfebb
+Author: Lelaure <lelaure@toto.fr>
+Date:   Fri Sep 22 16:10:56 2023 +0200
+
+    Merge branch 'master' of data:~jacquelin.charbonnel/exogit
+
+commit ee80ed63e01c2adb93e94661ae981e609a16ae0b
+Author: Abessolo Minko Auderic Bien Aimee <auderic@gmail.com>
+Date:   Fri Sep 22 16:06:54 2023 +0200
+
+    my first commit
+
+commit f653a8c06dfd2afff84a11f53fca998b79f83318
+Author: Nathan Rattoray <nathan.rattoray6@gmail.com>
+Date:   Fri Sep 22 16:06:00 2023 +0200
+
+    mon premier commit, un peu mon commit out
+
+commit a85ba0028ae6971addc4276cbc7eec64edc56ea2
+Author: Alice De L. Carroll <alice@pays.des.merveilles>
+Date:   Fri Sep 22 16:04:39 2023 +0200
+
+    commitArnaud
+
+commit 5bd79f7d626b3dc5c52be2dc37f8147e60b178e4
+Author: Lelaure <lelaure@toto.fr>
+Date:   Fri Sep 22 16:04:30 2023 +0200
+
+    mon premier commit
+
+commit 17bfebb8c7b776e7fa9884c81d5d83a8eccf2ced
+Author: Jacquelin Charbonnel <jaclin@toto.fr>
+Date:   Fri Sep 22 16:04:04 2023 +0200
+
+    mon premier commit
+
+commit a05401ce103eb2ec236777c578cfd02574691c7f
+Author: Super User <root@eprefatF38.stud.mua>
+Date:   Thu Aug 24 15:58:34 2023 +0200
+
+    initial creation
+
+[1]+  Stopped                 git log
+[jngouna@data exogit]$ ssh
